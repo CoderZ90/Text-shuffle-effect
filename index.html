@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="data">Text Shuffle - Reveal Effect</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script>
+        const text = baffle('.data');
+        text.set({
+            characters: '1x1ππI*@x',
+            // characters: '▒▓░ >██▒▒ ░▒▓▓▓ ▓░█ >▒▓▒█ ██▓▒ ▒▒█ ▓<█░ █▒█▒',
+            speed: 120
+        });
+        text.start();
+        text.reveal(4000);
+    </script>
+</body>
+</html>
